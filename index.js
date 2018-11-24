@@ -1,17 +1,13 @@
-const http = require("http");
-const port = 3000;
+const express = require("express");
+const morgan = require("morgan");
 
-const requestHandler = (request, reponse) => {
-  console.log(request.url);
-  response.end("Hello Node.js server");
-};
-
-const server = http.createServer(requestHandler);
-
-server.listen(port, err => {
-  if (err) {
-    return console.log("Something bad happened", err);
-  }
-
-  console.log(`Server is listening on port ${port}`);
+// App
+const app = express();
+// Morgan
+app.use(morgan("tiny"));
+// First route
+app.get("/", (req, res) => {
+  res.json({ message: "Hello world" });
 });
+// Starting server
+app.listen("3000");

@@ -1,10 +1,11 @@
 {
-  "name": "IBM RESTful API",
+  "name": "IBMRESTfulAPI",
   "version": "1.0.0",
   "description": "NodeJS RESTful API ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon start index.js"
   },
   "author": "Karan Bhargava",
   "license": "ISC",
@@ -12,6 +13,7 @@
     "nodemon": "^1.18.6"
   },
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
   }
 }
