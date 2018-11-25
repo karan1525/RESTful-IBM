@@ -1,0 +1,6 @@
+{
+  "/paginate/:page/:limit": "/data?_page=:page&_limit=:limit",
+  "/sort/:column1/:sort1/": "/data?_sort=:column1&_order=:sort1",
+  "/sort/:column1/:sort1/:column2/:sort2/": "/data?_sort=column1=:column1,column2=:column2&_order=sort1=:sort1,sort2:=sort2",
+  "/sort/:column1/:sort1/:column2/:sort2/:column3/:sort3": "/data?_sort=column1=:column1,column2=:column2,column3=:column3&_order=sort1=:sort1,sort2:=sort2,sort3:=sort3"
+}

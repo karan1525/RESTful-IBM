@@ -1,6 +1,6 @@
+// Import packages
 const express = require("express");
 const morgan = require("morgan");
-
 // App
 const app = express();
 // Morgan
@@ -10,4 +10,4 @@ app.get("/", (req, res) => {
   res.json({ message: "Hello world" });
 });
 // Starting server
-app.listen("3000");
+app.listen("3008");

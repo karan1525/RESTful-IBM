@@ -10,10 +10,10 @@
   "author": "Karan Bhargava",
   "license": "ISC",
   "devDependencies": {
+    "morgan": "^1.9.1",
     "nodemon": "^1.18.6"
   },
   "dependencies": {
-    "express": "^4.16.4",
-    "morgan": "^1.9.1"
+    "express": "^4.16.4"
   }
 }
